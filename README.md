@@ -29,6 +29,6 @@ False
 The first two lines come from Part 1; the third comes from Part 2.
 See SOLUTIONS.md for the algorithms, correctness proofs, complexity, and limitations.
 
-## Requirements that need clarification
+## Algorithm assumptions
 
-The supplied assignment does not specify sorted input or preprocessing for Part 1. It also describes a small target VALUE, rather than a small target POSITION, for Part 2. The solutions document states the additional assumptions explicitly. The code is correct under its documented input conditions; these ambiguities prevent an unconditional claim that both original time requirements have been met.
+Part 1 uses O(n log n) sorting preprocessing followed by O(log n) membership queries. Part 2 uses exponential search, taking O(1 + log(p + 1)) time, where p is the target’s insertion position. Detailed assumptions, correctness proofs, and complexity analysis are provided in SOLUTIONS.md.
